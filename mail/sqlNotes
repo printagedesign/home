@@ -1,0 +1,16 @@
+/*Increase Speed*/
+Set global thread_cache_size = 4;
+Set global query_cache_size = 1024*1024*1024;
+Set global query_cache_limit=768*1024;
+Set global query_cache_min_res_unit = 2048;
+Set long_query_time = 5;
+
+
+ALTER TABLE exporteddata ADD INDEX idx_FORIEGN_PORT (FORIEGN_PORT);
+ALTER TABLE exporteddata ADD INDEX idx_INDIAN_COMPANY (INDIAN_COMPANY);
+ALTER TABLE exporteddata ADD INDEX idx_FOREIGN_COUNTRY (FOREIGN_COUNTRY);
+ALTER TABLE exporteddata ADD INDEX idx_INDIAN_PORT (INDIAN_PORT);
+ALTER TABLE exporteddata ADD INDEX idx_HS_CODE (HS_CODE)
+ALTER TABLE exporteddata ADD INDEX idx_FOB_INR (FOB_INR)
+
+
