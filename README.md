@@ -1,2 +1,0 @@
-# home
-Product View page
